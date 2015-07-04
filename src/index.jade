@@ -3,13 +3,25 @@ extends ./layouts/main.jade
 block title
   title Automoblox | Home
 
+block navlinks
+  li
+    a.nav-link(href='about.html') About
+  li
+    a.nav-link(href='contact.html') Contact
+  li
+    a.nav-link(href='gallery.html') Gallery
+  li
+      a.nav-link.dropdown-button(href='#!', data-activates='dropdown1')
+        | Sign Up
+        i.material-icons.right arrow_drop_down
+
 block content
   .hero
     .container
       h1.main-title Create Joy Everyday
       h3.grey-text Get Our Latest Collection
       img.responsive-img(src='../img/hero.jpg', alt='feature cars image')
-      a.waves-effect.waves-light.btn-large 
+      a(href='http://www.automoblox.com/storelocator', target='_blank').waves-effect.waves-light.btn-large 
         i.material-icons.left store
         | Find a Store
 

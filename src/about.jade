@@ -1,0 +1,28 @@
+extends ./layouts/main.jade
+
+block title
+  title About | Automoblox 
+
+block navlinks
+  li.active
+    a.nav-link About
+  li
+    a.nav-link(href='contact.html') Contact
+  li
+    a.nav-link(href='gallery.html') Gallery
+  li
+      a.nav-link.dropdown-button(href='#!', data-activates='dropdown1')
+        | Sign Up
+        i.material-icons.right arrow_drop_down
+
+block content
+  .container
+    h2 About
+    .row.center-align
+      .col.m12
+        img.responsive-img(src='#{img}a9_large.jpg', alt='a9 model wooden toy car')
+    .row
+      .col.m6
+        p Automoblox® is an award winning, premium toy construction system based on transportation vehicles. Established in 2004, the company’s founders, designer Patrick Calello, entrepreneur Susan Calello and businessman Ray Rega are filling a niche in the toy market for a play experience that combines a back-to-basics approach with both design excellence and educational appeal.
+      .col.m6
+        p As the reinvention of the classic wooden car toy, Automoblox is the fusion of traditional craftsmanship and modern design, transformed into a mix-and-match building system that allows kids to create car styles as unique as their own personalities. With a “cool factor” that appeals to kids of all ages, Automoblox® is the next generation of classic toys.

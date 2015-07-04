@@ -1,19 +1,10 @@
 .navbar-fixed
   ul#dropdown1.dropdown-content
     li
-      a.drop--log-in(href='#!') Log In
+      a.drop--log-in(href='/') Log In
   nav.white
     .nav-wrapper.container
-      a.brand-logo(href='#!') 
+      a.brand-logo(href='/') 
         img(src='../img/logo.png', alt='Automoblox logo')
       ul.right.hide-on-med-and-down.nav-links
-        li
-          a.nav-link(href='about.html') About
-        li
-          a.nav-link(href='contact.html') Contact
-        li
-          a.nav-link(href='gallery.html') Gallery
-        li
-          a.nav-link.dropdown-button(href='#!', data-activates='dropdown1')
-            | Sign Up
-            i.material-icons.right arrow_drop_down
+        block navlinks

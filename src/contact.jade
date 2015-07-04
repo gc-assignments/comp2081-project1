@@ -1,0 +1,40 @@
+extends ./layouts/main.jade
+
+block title
+  title Contact | Automoblox 
+
+block navlinks
+  li
+    a.nav-link(href='about.html') About
+  li.active
+    a.nav-link Contact
+  li
+    a.nav-link(href='gallery.html') Gallery
+  li
+      a.nav-link.dropdown-button(href='#!', data-activates='dropdown1')
+        | Sign Up
+        i.material-icons.right arrow_drop_down
+
+block content
+  .container
+    h2 Contact
+    .row
+      .col.m6
+        img.responsive-img(src='#{img}m9_large.jpg', alt='m9 model wooden toy car')
+      .col.m4.offset-m2
+        h4 Address
+        ul
+          li: strong The Automoblox Company
+          li 18 N Salem Street
+          li Dover, NJ 07801
+        p
+          a(href='tel:973-442-9444') Phone:
+          |  +1 973 442-9444
+        p
+          a(href='mailto:media@automoblox.com') Email:
+          |  media@automoblox.com
+    .row
+      .col.m12
+        a(href='https://www.google.ca/maps/place/18+N+Salem+St,+Dover,+NJ+07801,+USA/data=!4m2!3m1!1s0x89c30a626f588719:0xa2970da2fd2fd57b?sa=X&ei=plyXVcerIoGRyASSrqlA&ved=0CCAQ8gEwAA',
+        target='_blank')
+          img.responsive-img(src='#{img}map.png', alt='map for company address')
