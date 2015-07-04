@@ -1,5 +1,11 @@
 - var img = '../img/'
 
+mixin jpg(name, alt)
+  img.responsive-img(src='#{img}#{name}.jpg', alt=alt)
+
+mixin png(name, alt)
+  img.responsive-img(src='#{img}#{name}.png', alt=alt)
+
 doctype html
 html(lang='en')
   head

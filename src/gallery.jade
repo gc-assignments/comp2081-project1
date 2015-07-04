@@ -15,8 +15,18 @@ block navlinks
         | Sign Up
         i.material-icons.right arrow_drop_down
 
+mixin card(name)
+  .col.s6.m4.l3.gallery-img
+    img.responsive-img.materialboxed(
+      src='#{img}#{name}_large.jpg'
+      alt='#{name} model wooden toy car')
+    hr
+    h5.center-align Name: #{name.toUpperCase()}
+
 block content
   .container
-    h2 Model Gallery
+    h2 Gallery
     .row
-      .col.m6.l3
+      each name in ['a9', 'a9s', 'c9', 'c9r', 'c9s', 'm9', 's9', 's9r', 't9', 'x9', 'x9x']
+        +card(name)
+
