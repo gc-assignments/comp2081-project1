@@ -1,0 +1,29 @@
+.row
+  form.col.s12
+    .row
+      .input-field.col.s6
+        input#first_name.validate(type='text')
+        label(for='first_name') First Name
+      .input-field.col.s6
+        input#last_name.validate(type='text')
+        label(for='last_name') Last Name
+    .row
+      .input-field.col.s12
+        input#email.validate(type='email')
+        label(for='email') Email
+    .row
+      .input-field.col.s12
+        input#password.validate(type='password')
+        label(for='password') Password
+    .row
+      .input-field.col.s12
+        input#pw_confirm.validate(type='password')
+        label(for='pw_confirm') Confirm Password
+    .row
+      .col.s6
+        a.waves-effect.waves-light.btn(
+          href='#!'
+          onclick="Materialize.toast('Success! Thank you for signing up', 3000)") Sign Up
+      .col.s6
+        +jpg('c9r_small', 'model c9r wooden toy car small pic')
+

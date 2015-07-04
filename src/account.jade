@@ -1,0 +1,32 @@
+extends ./layouts/main.jade
+
+block title
+  title Account | Automoblox 
+
+block navlinks
+  li
+    a.nav-link(href='about.html') About
+  li
+    a.nav-link(href='contact.html') Contact
+  li
+    a.nav-link(href='gallery.html') Gallery
+  li
+      a.nav-link.dropdown-button(href='#!', data-activates='dropdown1')
+        | Account
+        i.material-icons.right arrow_drop_down
+
+block content
+  .container
+    h2 Account
+    .row.account-form
+      .col.s12.m8.l6.offset-m2.offset-l3
+        ul.tabs.tab-bar
+          li.tab.col.s6
+            a(href='#signup') Sign Up
+          li.tab.col.s6
+            a(href='#login') Log In
+      #signup.col.s12.m8.l6.offset-m2.offset-l3
+        include ./layouts/signup.jade
+      #login.col.s12.m8.l6.offset-m2.offset-l3
+        include ./layouts/login.jade
+

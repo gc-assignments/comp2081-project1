@@ -12,7 +12,7 @@ block navlinks
     a.nav-link(href='gallery.html') Gallery
   li
       a.nav-link.dropdown-button(href='#!', data-activates='dropdown1')
-        | Sign Up
+        | Account
         i.material-icons.right arrow_drop_down
 
 block content
@@ -37,4 +37,4 @@ block content
       .col.m12
         a(href='https://www.google.ca/maps/place/18+N+Salem+St,+Dover,+NJ+07801,+USA/data=!4m2!3m1!1s0x89c30a626f588719:0xa2970da2fd2fd57b?sa=X&ei=plyXVcerIoGRyASSrqlA&ved=0CCAQ8gEwAA',
         target='_blank')
-          img.responsive-img(src='#{img}map.png', alt='map for company address')
+          +png('map', 'map for company address')

@@ -4,7 +4,8 @@ footer.page-footer
       .col.l6.s12
         h5.white-text Email Newsletter
         p.grey-text.text-lighten-4 Subscribe to our newsletter to get the latest update for our models!
-        a.waves-effect.waves-light.btn
+        a.waves-effect.waves-light.btn(
+          onclick="Materialize.toast('Subscribed successfully', 3000)")
           i.material-icons.right send
           | Subscribe
       .col.l4.offset-l2.s12
