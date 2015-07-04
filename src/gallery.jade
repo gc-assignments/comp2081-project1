@@ -8,12 +8,10 @@ block navlinks
     a.nav-link(href='about.html') About
   li
     a.nav-link(href='contact.html') Contact
-  li
+  li.active
     a.nav-link Gallery
   li
-      a.nav-link.dropdown-button(href='#!', data-activates='dropdown1')
-        | Account
-        i.material-icons.right arrow_drop_down
+    a.nav-link(href='account.html') Account
 
 mixin card(name)
   .col.s6.m4.l3.gallery-img
